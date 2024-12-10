@@ -1,0 +1,33 @@
+---
+- name: Configure NGINX on web server
+  hosts: web
+  become: true
+  tasks:
+    - name: Ensure NGINX is installed
+      ansible.builtin.package:
+        name: nginx
+        state: present
+
+    - name: Upload custom NGINX configuration
+      ansible.builtin.template:
+        src: nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+        owner: root
+        group: root
+        mode: '0644'
+      notify:
+        - Restart NGINX
+
+    - name: Upload web resource
+      ansible.builtin.template:
+        src: index.html.j2
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+  handlers:
+    - name: Restart NGINX
+      ansible.builtin.service:
+        name: nginx
+        state: restarted

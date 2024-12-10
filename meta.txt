@@ -1,0 +1,7 @@
+users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa <AAAAB3NzaC1yc2EAAAADAQABAAACAQDGcuHl4wiSR3XkteniWArwBQ2r/lAsfqIZUMCDM6tqPtBFC0wq/Fsp2Sb1YxVvs2Ke0clgwHrD4WhhLK9Y8b2Wdtu1EFRtN/iKVzKmyotmccBDC/qVn8uHVFQCNbgySDjIuKSaoGNEnpElTS3sH0IRslLNddmhleZ3zWqLPwWw4aS+Ld0n3utteF9fgedT3Z5VbvWWmHv5ML56ndVL+j7DbGEuJTxvO4nnbwloJiz5yGuY/ZniIKMY4uVI/++UduEOL1jZuJeTN4kAw3C1Xx4qJSgdLh35ykBnGRqUtn2nKOqUA1k81X8bg3DqzRHKLtNFGlvNbghzz3zCwMDqJXldUaFS7gzvowLDyqcPCEVdZV1fi4dkO9cz7bAOKxV/bPV4rS/3swqEjnF8MnhP14kHQ82mTt7/ea3JqeDUngfJHo0rZmBp175NoUxncLeL6/b5DEaS8hxB1igD4yhYVS7oURVxij+o4jBBlmEBy+x5MfIeutcruOaDVB5vVzXXjZC5jt+MFDyRgPgAznewGcGLtZ9ZiU/veE/j4kjslQLqFtdDPXUAxMbfYVaCU7f1E3cLnyeOB5984do8vJlfS4jf1Hg08p4IWa/912WTSN7peUm+Ru+uu+zqKboB1zwjIC6M1ruaIdACHMWwwgujmOC60CaRGHTE8FY9s/Lc+fq7dw==>
