@@ -12,8 +12,11 @@
 
 Секретный токен от yandex cloud должен вводится в консоли при каждом запуске terraform.
 
-1) ANSIBLE
+Скриншот-1
 <https://github.com/PeterFumelli/YandexCloud/blob/main/img/ansible.png>
 
-2) YANDEX_CLOUD
-<https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud1.png> <https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud2.png>
+Скриншот-2
+<https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud1.png>
+
+Скриншот-3
+![Скриншот-3]<https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud2.png>
