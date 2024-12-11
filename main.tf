@@ -13,8 +13,8 @@ variable "yandex_cloud_token" {
 
 provider "yandex" {
   token     = var.yandex_cloud_token
-  cloud_id  = "your-cloud-id"
-  folder_id = "your-folder-id"
+  cloud_id  = "cloud-pfhositru"
+  folder_id = "b1g9fkgcb4m0n7vhc475"
   zone      = "ru-central1-a"
 }
 
@@ -39,7 +39,7 @@ resource "yandex_compute_instance" "vm-1" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd87kbts7j40q5b9rpjr" # Ubuntu 20.04 или другая актуальная ОС
+      image_id = "fd876gids9srs8ma0592"
     }
   }
 
@@ -49,7 +49,7 @@ resource "yandex_compute_instance" "vm-1" {
   }
 
   metadata = {
-    user-data = "${file("./meta.txt")}"
+  user-data = "${file("cloud-init.yml")}"
   }
 }
 
