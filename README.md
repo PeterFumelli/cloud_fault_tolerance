@@ -5,8 +5,8 @@
 
 
 NGINX
-<https://github.com/PeterFumelli/YandexCloud/blob/main/img/ansible.png>
+<https://github.com/PeterFumelli/cloud_fault_tolerance/blob/main/img/nginx.png>
 
 Balancer
-<https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud1.png>
+<https://github.com/PeterFumelli/cloud_fault_tolerance/blob/main/img/balancer.png>
 
