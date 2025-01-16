@@ -18,12 +18,12 @@ provider "yandex" {
   zone      = "ru-central1-a"
 }
 
-# Создание новой сети
+# Создаем новую сеть
 resource "yandex_vpc_network" "network-1" {
   name = "new-network"
 }
 
-# Создание новой подсети
+# Создаем новую подсеть
 resource "yandex_vpc_subnet" "subnet-1" {
   name           = "new-subnet"
   zone           = "ru-central1-a"
@@ -42,7 +42,7 @@ resource "yandex_compute_instance" "vm" {
   }
   boot_disk {
     initialize_params {
-      image_id = "fd876gids9srs8ma0592" # Замените на актуальный ID образа
+      image_id = "fd876gids9srs8ma0592"
     }
   }
   network_interface {
@@ -62,7 +62,7 @@ resource "yandex_compute_instance" "vm" {
   }
 }
 
-# Создание таргет-группы
+# Создаем таргет-группы
 resource "yandex_lb_target_group" "example" {
   name      = "example-target-group"
   region_id = "ru-central1"
@@ -78,7 +78,7 @@ resource "yandex_lb_target_group" "example" {
   }
 }
 
-# Создание сетевого балансировщика нагрузки
+# Создаем сетевой балансировщик нагрузки
 resource "yandex_lb_network_load_balancer" "example" {
   name = "example-nlb"
 
