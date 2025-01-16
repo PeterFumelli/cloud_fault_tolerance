@@ -4,11 +4,9 @@
 
 
 
-Скриншот-1
+NGINX
 <https://github.com/PeterFumelli/YandexCloud/blob/main/img/ansible.png>
 
-Скриншот-2
+Balancer
 <https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud1.png>
 
-Скриншот-3
-<https://github.com/PeterFumelli/YandexCloud/blob/main/img/ya_cloud2.png>
